@@ -11,5 +11,7 @@ go_library(
 go_binary(
     name = "rules_go_ios_example",
     embed = [":go_default_library"],
+    goos = "darwin",
+    goarch = "arm64",
     visibility = ["//visibility:public"],
 )
